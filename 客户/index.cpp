@@ -21,8 +21,12 @@ int main(){
 		cin>>s[i].flag;
 		getline(cin,s[i].nr);
 	}
+	ss="stylesheet";
+	char xx='"';
+	string sss="style.css";
 	freopen("CON","r",stdin);
 	cout<<"<html>"<<endl<<"<head>"<<endl<<"<h2>"<<endl<<name<<"的blog-基于zhiziblog</h2>"<<endl;
+	cout<<"<link rel="<<xx<<ss<<xx<<" href="<<xx<<sss<<xx<<">"<<endl;
 	cout<<"<a href="<<ss<<">博客主页</a>"<<endl;
 	cout<<"<br>"<<endl;
 	ss="./个人简介.exe";
