@@ -4,15 +4,15 @@ using namespace std;
 string name;
 int ans;
 struct blog{
-	string mz;//Ãû×Ö
-	string zt;//Ö÷Ìâ
-	int flag;//ÊÇ·ñÉ¾³ı
-	string nr;//ÄÚÈİ
+	string mz;//åå­—
+	string zt;//ä¸»é¢˜
+	int flag;//æ˜¯å¦åˆ é™¤
+	string nr;//å†…å®¹
 }s[9999999];
 string ss="./index.exe";
 int main(){
 	cout << "Content-type:text/html\r\n\r\n";
-	freopen("×¢²á.txt","r",stdin);
+	freopen("me.txt","r",stdin);
 	cin>>ans;
 	getline(cin,name);
 	for(int i=1;i<=ans;i++){
@@ -21,20 +21,21 @@ int main(){
 		cin>>s[i].flag;
 		getline(cin,s[i].nr);
 	}
-	ss="stylesheet";
+	ss="index.exe";
 	char xx='"';
 	string sss="style.css";
 	freopen("CON","r",stdin);
-	cout<<"<html>"<<endl<<"<head>"<<endl<<"<h2>"<<endl<<name<<"µÄblog-»ùÓÚzhiziblog</h2>"<<endl;
+	cout<<"<html>"<<endl<<"<head>"<<endl<<"<h2>"<<endl<<name<<"çš„blog-åŸºäºzhiziblog</h2>"<<endl;
 	cout<<"<link rel="<<xx<<ss<<xx<<" href="<<xx<<sss<<xx<<">"<<endl;
-	cout<<"<a href="<<ss<<">²©¿ÍÖ÷Ò³</a>"<<endl;
+	cout<<"<a href="<<ss<<">åšå®¢ä¸»é¡µ</a>"<<endl;
 	cout<<"<br>"<<endl;
-	ss="./¸öÈË¼ò½é.exe";
-	cout<<"<a href="<<ss<<">¸öÈË¼ò½é</a>"<<endl;
+	ss="./me.exe";
+	cout<<"<a href="<<ss<<">ä¸ªäººç®€ä»‹</a>"<<endl;
 	cout<<"<br>"<<endl;
 	cout<<"</head>"<<endl;
 	cout<<"<body>"<<endl;
-	cout<<"<h3>"<<name<<"µÄÎÄÕÂ</h3>"<<endl;
+	cout<<"<h3>"<<name<<"çš„æ–‡ç« </h3>"<<endl;
+	ss="stylesheet";
 	for(int i=1;i<=ans;i++){
 		if(s[i].flag==1){
 			ss="./"+s[i].mz;
@@ -43,6 +44,6 @@ int main(){
 			cout<<"<br>"<<endl;
 		}
 	}
-	cout<<"<del>×ÔºÀµÄ²ÉÓÃzhiziblog</del>"<<endl;
+	cout<<"<del>è‡ªè±ªçš„é‡‡ç”¨zhiziblog</del>"<<endl;
 	return 0;
 }
