@@ -6,12 +6,12 @@ using namespace std;
 string name,str;
 int ans,n,w;
 struct blog{
-	string mz;//Ãû×Ö
-	string zt;//Ö÷Ìâ
-	int flag;//ÊÇ·ñÉ¾³ı
-	string nr;//ÄÚÈİ
+	string mz;//åå­—
+	string zt;//ä¸»é¢˜
+	int flag;//æ˜¯å¦åˆ é™¤
+	string nr;//å†…å®¹
 }s[9999999];
-bool td(){//ºÜÏñÖÊÊıÅĞ¶Ï(±»´ò
+bool td(){//å¾ˆåƒè´¨æ•°åˆ¤æ–­(è¢«æ‰“
 	if(ans==1){
 		return true;
 	}
@@ -25,21 +25,21 @@ bool td(){//ºÜÏñÖÊÊıÅĞ¶Ï(±»´ò
 void sh(){
 	for(int i=1;i<=ans;i++){
 		if(str==s[i].mz){
-			cout<<"É¾³ı³É¹¦!"<<endl;
+			cout<<"åˆ é™¤æˆåŠŸ!"<<endl;
 			s[i].flag=0;
 			return;
 		}
 	}
-	cout<<"Î´ÕÒµ½ÎÄÕÂ"<<endl;
+	cout<<"æœªæ‰¾åˆ°æ–‡ç« "<<endl;
 	return;
 }
 int main(){
-	cout<<"»¶Ó­Ê¹ÓÃzhiziblog"<<endl;
+	cout<<"æ¬¢è¿ä½¿ç”¨zhiziblog"<<endl;
 	sleep(1);
-	freopen("×¢²á.txt","r",stdin);
+	freopen("me.txt","r",stdin);
 	cin>>ans;
 	if(ans==-1){
-		system("start ×¢²á.exe");
+		system("start signup.exe");
 		return 0;
 	}
 	else{
@@ -54,19 +54,19 @@ int main(){
 	}
 	system("cls");
 	while(true){
-		cout<<name<<"ÓĞºÎ¹ó¸É?"<<endl<<"1.ÊéĞ´ÎÄÕÂ"<<endl<<"2.É¾³ıÎÄÕÂ"<<endl<<"3.ÎÄÕÂÁĞ±í"<<endl<<"4.·¢²¼ÎÄÕÂ"<<endl<<"5.ÍË³ö"<<endl;
+		cout<<name<<"æœ‰ä½•è´µå¹²?"<<endl<<"1.ä¹¦å†™æ–‡ç« "<<endl<<"2.åˆ é™¤æ–‡ç« "<<endl<<"3.æ–‡ç« åˆ—è¡¨"<<endl<<"4.å‘å¸ƒæ–‡ç« "<<endl<<"5.é€€å‡º"<<endl;
 		cin>>n;
 		if(n==1){
 			ans++;
 			system("cls");
-			cout<<"ÇëÔÚÎÄÕÂ.txtÖĞĞ´³öÎÄÕÂÄÚÈİ"<<endl;
+			cout<<"è¯·åœ¨æ–‡ç« .txtä¸­å†™å‡ºæ–‡ç« å†…å®¹"<<endl;
 			system("pause");
 			system("cls");
-			cout<<"ÇëÊäÈëÎÄÕÂÃû×Ö:";
+			cout<<"è¯·è¾“å…¥æ–‡ç« åå­—:";
 			getline(cin,s[ans].mz);
-			cout<<"ÇëÊäÈëÎÄÕÂÖ÷Ìâ:";
+			cout<<"è¯·è¾“å…¥æ–‡ç« ä¸»é¢˜:";
 			getline(cin,s[ans].zt);
-      freopen("ÎÄÕÂ.txt","r",stdin);
+      freopen("æ–‡ç« .txt","r",stdin);
       getline(cin,s[ans].nr);
       freopen("CON","r",stdin);
 			if(td()==true){
@@ -76,7 +76,7 @@ int main(){
 			system("cls");
 			}
 			else{
-				cout<<"ÎÄÕÂÃû³Æ²»ÄÜºÍÒÔÇ°µÄÏàÍ¬!"<<endl;
+				cout<<"æ–‡ç« åç§°ä¸èƒ½å’Œä»¥å‰çš„ç›¸åŒ!"<<endl;
 				sleep(1);
 	      system("cls");
 				ans--;
@@ -84,7 +84,7 @@ int main(){
 		}
 		else if(n==2){
 			system("cls");
-			cout<<"ÇëÊäÈëÎÄÕÂÃû×ÖÀ´É¾³ı:";
+			cout<<"è¯·è¾“å…¥æ–‡ç« åå­—æ¥åˆ é™¤:";
 			getline(cin,str);
 			sh();
 			sleep(1);
@@ -92,7 +92,7 @@ int main(){
 		}
 		else if(n==3){
 			system("cls");
-			cout<<"ÎÄÕÂÁĞ±í:"<<endl;
+			cout<<"æ–‡ç« åˆ—è¡¨:"<<endl;
 			for(int i=1;i<=ans;i++){
 				if(s[i].flag==1){
 					cout<<s[i].mz<<endl;
@@ -102,20 +102,20 @@ int main(){
 			system("cls");
 		}
 		else if(n==6){
-			freopen("ÎÄÕÂ.txt","w",stdout);
+			freopen("æ–‡ç« .txt","w",stdout);
 			for(int i=1;i<=ans;i++){
 				cout<<s[i].mz<<endl<<s[i].zt<<endl<<s[i].flag<<s[i].nr<<endl;
 			}
 			freopen("CON","w",stdout);
-			cout<<"¸ĞĞ»Ê¹ÓÃ"<<","<<name<<endl;
+			cout<<"æ„Ÿè°¢ä½¿ç”¨"<<","<<name<<endl;
 			sleep(1);
 			return 0;
 		}
 		else if(n==5){
-			system("start ·¢²¼.exe");
+			system("start togo.exe");
 		}
 		else{
-			cout<<"´íÎó"<<endl;
+			cout<<"é”™è¯¯"<<endl;
 			sleep(1);
 			system("cls");
 		}
