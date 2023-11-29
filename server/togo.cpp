@@ -4,17 +4,17 @@
 using namespace std;
 int ans;
 struct blog{
-	string mz;//Ãû×Ö
-	string zt;//Ö÷Ìâ
-	int flag;//ÊÇ·ñÉ¾³ı
-	string nr;//ÄÚÈİ
+	string mz;//åå­—
+	string zt;//ä¸»é¢˜
+	int flag;//æ˜¯å¦åˆ é™¤
+	string nr;//å†…å®¹
 }s[9999999];
 string name,ss;
 int main(){
-	cout<<"Çë´´½¨ËùÓĞµÄÎÄÕÂÃû×Ö+.htmlµÄÎÄ¼ş"<<endl;
+	cout<<"è¯·åˆ›å»ºæ‰€æœ‰çš„æ–‡ç« åå­—+.htmlçš„æ–‡ä»¶"<<endl;
 	system("pause");
 	system("cls");
-	freopen("×¢²á.txt","r",stdin);
+	freopen("æ³¨å†Œ.txt","r",stdin);
 	cin>>ans;
 	getline(cin,name);
 	for(int i=1;i<=ans;i++){
@@ -25,12 +25,12 @@ int main(){
 	}
 	freopen("CON","r",stdin);
 	for(int i=1;i<=ans;i++){
-		freopen(s[i].mz,"w",stdout);
-		cout<<"<html>"<<endl<<"<head>"<<endl<<"<h2>"<<endl<<name<<"µÄblog-»ùÓÚzhiziblog</h2>"<<endl;
-		cout<<"<a href="<<ss<<">²©¿ÍÖ÷Ò³</a>"<<endl;
+		freopen(s[i].mz+".html","w",stdout);
+		cout<<"<html>"<<endl<<"<head>"<<endl<<"<h2>"<<endl<<name<<"çš„blog-åŸºäºzhiziblog</h2>"<<endl;
+		cout<<"<a href="<<ss<<">åšå®¢ä¸»é¡µ</a>"<<endl;
 		cout<<"<br>"<<endl;
-		ss="./¸öÈË¼ò½é.exe";
-		cout<<"<a href="<<ss<<">¸öÈË¼ò½é</a>"<<endl;
+		ss="./ä¸ªäººç®€ä»‹.exe";
+		cout<<"<a href="<<ss<<">ä¸ªäººç®€ä»‹</a>"<<endl;
 		cout<<"<br>"<<endl;
 		cout<<"</head>"<<endl;
 		cout<<"<body>"<<endl;
